@@ -1,0 +1,11 @@
+<div id="APi-Wrapper-Column">
+  <div id="Api-Header-Div" [ngStyle]="{ backgroundColor: ComponentBg }" (mouseover)="ComponentBg = 'darkgray'" (mouseleave)="ComponentBg = 'gainsboro'">
+    <button id="Remove-Btn" (click)="Remove()"></button>
+    <label id="Api-Header-Text" (click)="Minimize()">{{ URL }}</label>
+  </div>
+  <textarea *ngIf="this.MinimizeFlag == false" id="Text-Area" [ngStyle]="{ fontSize: FontSize + 'px' }">{{ myText }}</textarea>
+  <div *ngIf="this.MinimizeFlag == false" id="Api-Dashboard" [ngStyle]="{ backgroundColor: ComponentBg }">
+    <input id="Font-Size" type="range" [(ngModel)]="FontSize">
+  </div>
+</div>
+

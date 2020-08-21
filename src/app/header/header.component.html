@@ -1,0 +1,12 @@
+<div style="margin-bottom: 55px">
+  <header id="myHeader">
+    <img id="myIcon" src="../../assets/icons/Icon%20(5).png">
+    <div id="Search-Div">
+      <input id="Search-Box" type="text" placeholder="API" [(ngModel)]="myURL">
+      <div id="Search-Icon-Div">
+        <img id="SearchBtn" src="../../assets/Search.png" id="Search-Icon" (click)="Fetch(this.myURL)">
+      </div>
+    </div>
+    <h1>API Explorer</h1>
+  </header>
+</div>

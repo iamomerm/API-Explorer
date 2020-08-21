@@ -1,0 +1,9 @@
+<div id="Wrapper-Column">
+  <app-header></app-header>
+    <ng-container *ngFor="let URL of this.myURLs">
+      <hr id="Separator">
+      <div id="Wrapper-Row">
+        <div id="API-Div"><app-api [URL]="URL"></app-api></div>
+      </div>
+    </ng-container>
+</div>
